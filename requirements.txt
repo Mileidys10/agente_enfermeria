@@ -1,0 +1,26 @@
+# =============================================================
+# NURSE AGENT — Dependencias de Python
+# Instala con: pip install -r requirements.txt
+# =============================================================
+
+# SDK oficial de Google para Gemini y Gemma (visión multimodal)
+google-genai>=1.0.0
+
+# Carga de variables desde archivo .env
+python-dotenv>=1.0.0
+
+# Generación profesional de PDFs
+reportlab>=4.2.0
+
+# CLI interactivo con comandos, flags y ayuda automática
+typer>=0.12.0
+
+# Impresión enriquecida en terminal (colores, tablas, progress bars)
+rich>=13.7.0
+
+# Pillow: lectura y manipulación de imágenes (JPEG/PNG → bytes)
+Pillow>=10.3.0
+
+# Streamlit: framework para crear la interfaz web en localhost
+# Corre con: streamlit run app.py
+streamlit>=1.35.0

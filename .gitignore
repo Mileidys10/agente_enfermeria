@@ -1,0 +1,25 @@
+# .gitignore — Archivos que NO deben subirse a control de versiones
+.env
+data/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+AGENTS.md
+*.env
+.gemini/
+
+
+# Proteccion automatica de secretos de fabrica
+.env.local
+credentials.json
+service_account.json
+GEMINI.md
+.agents/
+contexto/
+obsidian-vault/
