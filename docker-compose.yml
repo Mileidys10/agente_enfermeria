@@ -1,0 +1,25 @@
+# ==============================================================================
+# docker-compose.yml — Agente Clínico de Enfermería
+# Ejecución en un solo comando: docker compose up --build
+# ==============================================================================
+
+services:
+  agente-enfermeria:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agente-enfermeria-uci
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persistencia de la base de datos SQLite y reportes PDF generados
+      - ./data:/app/data
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+      - GEMMA_MODEL=${GEMMA_MODEL:-gemma-4-26b-a4b-it}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8501/_stcore/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
