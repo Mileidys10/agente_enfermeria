@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # ==============================================================================
 # AGENTE CLÍNICO DE ENFERMERÍA — WORKSTATION DE TRIAGE & MONITOREO UCI
-# Estándar Google Cloud OKF v0.2 | Gemini & Gemma Multimodal (Vision & Audio)
+# Estandar FHIR / Schema.org JSON-LD | Gemini & Gemma Multimodal (Vision & Audio)
 # ==============================================================================
 
 import streamlit as st
@@ -329,7 +329,7 @@ render_html("""
         border-radius: 8px;
     }
 
-    /* JSON-LD TERMINAL (Google Cloud OKF) */
+    /* JSON-LD TERMINAL (Schema.org / HL7 FHIR) */
     .okf-terminal {
         background: #050a08;
         border: 1px solid #142420;
@@ -626,7 +626,7 @@ with st.sidebar:
     <div style="text-align: center; padding: 10px 0;">
         <div style="font-size: 2.2rem; margin-bottom: 4px;">🏥</div>
         <div style="font-weight: 800; font-size: 1.1rem; color: #ffffff;">Estación UCI</div>
-        <div style="font-size: 0.76rem; color: #00d2aa;">Google Cloud OKF v0.2</div>
+        <div style="font-size: 0.76rem; color: #00d2aa;">Estandar FHIR / JSON-LD</div>
     </div>
     """)
     st.divider()
@@ -667,7 +667,7 @@ with st.sidebar:
         <b>Enfermera a Cargo:</b> Elena Ramírez<br>
         <b>ID Personal:</b> 7412<br>
         <b>Servicio:</b> Cuidados Intensivos (UCI)<br>
-        <b>Estándar:</b> OKF / JSON-LD / FHIR
+        <b>Estandar:</b> HL7 FHIR / JSON-LD Semantico
     </div>
     """)
 
@@ -964,7 +964,7 @@ with tab_dash:
                     <span style="font-size: 0.68rem; color: #64748b;">{st.session_state['active_case']['date']} · {st.session_state['active_case']['time']}</span>
                 </div>
                 <div class="pdf-doc-title">INFORME DE TRIAGE Y EVALUACIÓN CLÍNICA</div>
-                <div style="font-size: 0.68rem; color: #64748b; margin-bottom: 10px;">ID Registro: OKF-MED-7412-2026 | Protocolo UCI Nivel II</div>
+                <div style="font-size: 0.68rem; color: #64748b; margin-bottom: 10px;">ID Registro: CLINIC-MED-7412-2026 | Protocolo UCI Nivel II</div>
                 <div class="pdf-meta-box">
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px;">
                         <div><b>Paciente:</b> {st.session_state['active_case']['patient_name']}</div>

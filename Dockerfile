@@ -1,6 +1,6 @@
 # ==============================================================================
 # Dockerfile — Agente Clínico de Enfermería (Streamlit + ReportLab + OKF)
-# Gobernado por el Estándar Google Cloud OKF v0.2
+# Agente Clinico de Enfermeria - Contenedorizacion Docker
 # ==============================================================================
 
 FROM python:3.11-slim
